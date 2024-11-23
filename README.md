@@ -6,7 +6,9 @@ with [FrankenPHP](https://frankenphp.dev) and [Caddy](https://caddyserver.com/) 
 ![CI](https://github.com/dunglas/symfony-docker/workflows/CI/badge.svg)
 
 ## Getting Started
-
+```bash
+ docker exec -it learn-symfony-php-1 bash
+```
 1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/) (v2.10+)
 2. Run `docker compose build --no-cache` to build fresh images
 3. Run `docker compose up --pull always -d --wait` to set up and start a fresh Symfony project
