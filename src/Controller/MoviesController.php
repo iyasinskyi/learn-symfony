@@ -32,7 +32,7 @@ class MoviesController extends AbstractController
     public function index(): Response {
        $repository = $this->entityManager->getRepository(Movie::class);
         $movies = $repository->findOneBy(['id'=>5,'title'=>'The Great Movie'],['id'=>'ASC']);
-        dd($movies);
+     //   dd($movies);
      return $this->render('index.html.twig', [
          'title' => 'Movies title',
          'movies' => $movies,
